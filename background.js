@@ -1,5 +1,11 @@
+var bidenOdds, trumpOdds
 chrome.alarms.create("538 Updated", {when: Date.now(), periodInMinutes:1})
 chrome.alarms.onAlarm.addListener(checkModel);
+
+chrome.notifications.onClicked.addListener((id) => {
+	if (id=="538 Updated")
+		chrome.tabs.create({url: "https://projects.fivethirtyeight.com/2020-election-forecast/"});
+});
 
 function checkModel(alarm) {
 	if (alarm.name != "538 Updated") return false;
@@ -45,10 +51,5 @@ function notify() {
 		progress: bidenOdds,
 		silent: true
 	}
-	chrome.notifications.create("538 Updated", notifOptions);
-	chrome.notifications.onClicked.addListener((id) => {
-		if (id=="538 Updated")
-			chrome.tabs.create({url: "https://projects.fivethirtyeight.com/2020-election-forecast/"});
-	});
-	chrome.notifications.clear("538 Updated");
+	chrome.notifications.create("538 Updated", notifOptions);	chrome.notifications.clear("538 Updated");
 }

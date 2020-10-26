@@ -4,6 +4,7 @@
 	"version": "0.1.0",
 	"manifest_version": 2,
 	"icons": {
+		"48": "./FOXYMALARKEY48.png",
 		"128": "./FOXYMALARKEY.png"
 	},
 	"background": {
