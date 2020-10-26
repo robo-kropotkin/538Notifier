@@ -1,0 +1,21 @@
+{
+	"name": "538Notify",
+	"description": "Notify you when the 538 model is updated so you don't spend your days refreshing over and over again!",
+	"version": "0.1.0",
+	"manifest_version": 2,
+	"icons": {
+		"128": "./FOXYMALARKEY.png"
+	},
+	"background": {
+		"scripts": ["./background.js"]
+	},
+	"browser_action":{
+		"default_popup": "popup.html"
+	},
+	"permissions": [
+		"alarms",
+		"notifications",
+		"storage",
+		"https://projects.fivethirtyeight.com/2020-election-forecast/"
+	]
+}
