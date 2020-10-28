@@ -16,7 +16,6 @@
 	"permissions": [
 		"alarms",
 		"notifications",
-		"storage",
-		"https://projects.fivethirtyeight.com/2020-election-forecast/"
+		"storage"
 	]
 }
