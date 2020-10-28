@@ -1,4 +1,3 @@
-var bidenOdds, trumpOdds
 chrome.alarms.create("538 Updated", {when: Date.now(), periodInMinutes:1})
 chrome.alarms.onAlarm.addListener(checkModel);
 
@@ -34,7 +33,7 @@ function checkModel(alarm) {
 				}
 				else if (FiveThirtyEightUpdateTime < newUpdated.getTime()) {
 					chrome.storage.local.set({"FiveThirtyEightUpdateTime": newUpdated.getTime()})
-					notify()
+					notify(bidenOdds, trumpOdds)
 				}
 			});
 		}
@@ -42,7 +41,7 @@ function checkModel(alarm) {
 	FiveThirtyEightRequest.send();
 }
 
-function notify() {
+function notify(bidenOdds, trumpOdds) {
 	notifOptions = {
 		type: "progress",
 		title: "538 Model Updated",
