@@ -45,7 +45,7 @@ function notify(bidenOdds, trumpOdds) {
 	notifOptions = {
 		type: "progress",
 		title: "538 Model Updated",
-		iconUrl: "./FOXYMALARKEY.png",
+		iconUrl: "./pics/FOXYMALARKEY.png",
 		message: "538 Just updated their prediction! Click here to check it out!\nBiden: " + bidenOdds + ", Trump: " + trumpOdds,
 		progress: bidenOdds,
 		silent: true
