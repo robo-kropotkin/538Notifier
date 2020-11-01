@@ -13,7 +13,6 @@ function checkModel(alarm) {
 	FiveThirtyEightRequest.open("GET", "https://projects.fivethirtyeight.com/2020-election-forecast/us_timeseries.json")
 	FiveThirtyEightRequest.onreadystatechange = () => {
 		if (FiveThirtyEightRequest.readyState == 4) {
-			var newUpdated, newBiden, newTrump
 			modelData = JSON.parse(FiveThirtyEightRequest.responseText)[0]
 
 			newUpdated = new Date(modelData.updated)
