@@ -7,7 +7,7 @@ Sick of refreshing the FiveThirtyEight forcast page every 10 minutes hoping for 
 This extension checks the FiveThirtyEight forcast page and sends you a desktop notification with the current odds when there's an update.
 The notification should look like this:
 
-![Example](/Example.png)
+![Example](/pics/Example.png)
 
 ## How does it work?
 
