@@ -2,6 +2,11 @@
 
 Sick of refreshing the FiveThirtyEight forcast page every 10 minutes hoping for that 87 to turn to 88? Introducing 538Notifier!
 
+## Installation
+
+Through the play store:
+https://chrome.google.com/webstore/detail/538notify/djehogehididkoomccdbnkhihhbmjkpf?hl=en
+
 ## Example
 
 This extension checks the FiveThirtyEight forcast page and sends you a desktop notification with the current odds when there's an update.
